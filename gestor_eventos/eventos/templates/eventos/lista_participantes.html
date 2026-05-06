@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Participantes</h1>
+
+<a class="btn btn-verde" href="{% url 'crear_participante' %}">+ Nuevo</a>
+
+{% for p in participantes %}
+<div class="card">
+    <h3>{{ p.nombre }}</h3>
+    <p>{{ p.email }}</p>
+    <p><strong>Evento:</strong> {{ p.evento.nombre }}</p>
+
+    {% if p.foto %}
+        <img src="{{ p.foto.url }}" width="150">
+    {% endif %}
+</div>
+{% empty %}
+    <p>No hay participantes registrados</p>
+{% endfor %}
+
+{% endblock %}

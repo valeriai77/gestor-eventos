@@ -1,0 +1,114 @@
+:root {
+    --verde-claro: #C7D68A;
+    --verde-oliva: #9DB36A;
+    --rosa-claro: #E6BFC2;
+    --rosa-fuerte: #D94B73;
+    --fondo: #F7F7F7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(90deg, var(--verde-claro), var(--rosa-claro));
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/* CONTENIDO */
+.container {
+    padding: 30px;
+}
+
+/* TARJETAS */
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BOTONES */
+.btn {
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-verde {
+    background-color: var(--verde-oliva);
+}
+
+.btn-rosa {
+    background-color: var(--rosa-fuerte);
+}
+
+/* FORMULARIO */
+form {
+    max-width: 500px;
+}
+
+/* INPUTS */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* EFECTO AL ESCRIBIR */
+input:focus, select:focus, textarea:focus {
+    border-color: #D94B73;
+    box-shadow: 0 0 5px rgba(217,75,115,0.5);
+}
+
+/* LABELS */
+label {
+    font-weight: bold;
+}
+
+/* BOTÓN */
+button {
+    background-color: #9DB36A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7f9455;
+}
+
+/* CARD FORM */
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+}

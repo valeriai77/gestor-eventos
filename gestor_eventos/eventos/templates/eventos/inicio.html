@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bienvenido</h1>
+<p>Explora los eventos disponibles</p>
+
+{% for e in eventos %}
+<div class="card">
+    <h2>{{ e.nombre }}</h2>
+    <p>{{ e.fecha }} | {{ e.lugar }}</p>
+
+    {% if e.afiche %}
+        <img src="{{ e.afiche.url }}" width="200">
+    {% endif %}
+</div>
+{% empty %}
+<p>No hay eventos</p>
+{% endfor %}
+
+{% endblock %}
